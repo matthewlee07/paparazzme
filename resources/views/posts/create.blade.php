@@ -20,7 +20,7 @@
 
           @error('caption')
             <span class="invalid-feedback" role="alert">
-              <strong>{{ $message }}</strong>
+              <strong class="text-danger">{{ $message }}</strong>
             </span>
           @enderror
         </div>
@@ -28,7 +28,7 @@
           <label for="image" class="col-md-4 col-form-label">Post Image</label>
           <input type="file" class="form-control-file" id="image" name="image">
           @error('image')
-          <strong>{{ $message }}</strong>
+            <strong class="text-danger">{{ $message }}</strong>
           @enderror
         </div>
         <div class="row pt-4">
